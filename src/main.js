@@ -7,6 +7,7 @@ Vue.use(VueHighlightJS)
 
 Vue.config.productionTip = false
 const context = require.context('./', true, /^((?!demo\.vue).)+\.vue$/)
+console.log(`context(context.keys()[0]):`, context(context.keys()[0]))
 console.log(`context.keys():`, context.keys())
 try {
   context.keys().forEach(path => {
